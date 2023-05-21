@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { Divider, IconButton, InputBase, InputLabel, Paper } from '@mui/material'
+import { Divider, IconButton, InputBase, Paper } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
 
 const App = () => {
@@ -13,11 +13,12 @@ const App = () => {
           message: "Bulgh"
         }),
         headers:{
-          "Content-Type": "application/json"
+          "Content-type": "application/json"
         }
       }
       const response = await fetch('http://localhost:8000/images', options)
       const data = await response.json()
+
     }catch(err){
       console.error(err)
     }
@@ -27,7 +28,7 @@ const App = () => {
     <section>
 
       <h1>
-        Start with detailed description 
+        Start with detailed description  
         <span>
         Surpirse
         </span>
@@ -45,6 +46,7 @@ const App = () => {
     
         />
         <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
+
         <IconButton onClick={getImages} type="button" sx={{ p: '10px' }} aria-label="search">
           <SearchIcon />
         </IconButton>

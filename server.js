@@ -19,7 +19,7 @@ app.post('/images' , async (req, res) =>{
             prompt: "A cute baby sea otter",
             n: 2,
             size: "1024x1024",
-          });
+          }); 
           console.log(response.data.data) 
           res.send(response.data.data)
     }catch (err){
