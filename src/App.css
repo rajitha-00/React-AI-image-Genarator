@@ -1,3 +1,39 @@
 body {
-  background: rgba(212, 192, 192, 0.8274509804);
+  background: #5288e0;
+  color: #fff;
+  font-family: sans-serif;
+}
+body section {
+  border-radius: 15px;
+  background: #5288e0;
+  box-shadow: 20px 20px 60px #4674be, -20px -20px 60px #5e9cff;
+  margin: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+body section h1 {
+  font-size: 30px;
+}
+body section h1 span {
+  padding-left: 0.5rem;
+  color: #191b36;
+}
+body section .searchBox {
+  width: 100%;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #5892f0, #4a7aca);
+  box-shadow: 20px 20px 60px #416bb1, -20px -20px 60px #63a5ff;
+}
+body section .searchBox .searchinput {
+  color: #ffffff;
+  background: transparent;
+}
+body section .searchBox .searchinput::-moz-placeholder {
+  color: #ffffff;
+}
+body section .searchBox .searchinput::placeholder {
+  color: #ffffff;
 }/*# sourceMappingURL=App.css.map */
