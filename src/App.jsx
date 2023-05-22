@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { Divider, IconButton, InputBase, Paper } from '@mui/material'
+import { Divider, Grid, IconButton, InputBase, Paper } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
 
 const App = () => {
@@ -29,9 +29,9 @@ const App = () => {
 
       <h1>
         Start with detailed description  
-        <span>
+        {/* <span>
         Surpirse
-        </span>
+        </span> */}
       </h1>
       <Paper
         className='searchBox'
@@ -53,8 +53,24 @@ const App = () => {
         
       </Paper>
     </section>
-    <section>
-      <div className="imageSection"></div>
+    <section className="imageSection">
+      <div >
+        <Grid container justifyContent="center"
+  alignItems="center">
+          <Grid item lg="6">
+            <div className='card'></div>
+          </Grid>
+          <Grid item lg="6">
+            <div className='card'></div>
+          </Grid>
+          <Grid item lg="6">
+            <div className='card'></div>
+          </Grid>
+          <Grid item lg="6">
+            <div className='card'></div>
+          </Grid>
+        </Grid>
+      </div>
     </section>
     </>
   )

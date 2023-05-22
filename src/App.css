@@ -24,7 +24,7 @@ body section h1 span {
 body section .searchBox {
   width: 100%;
   border-radius: 15px;
-  background: linear-gradient(145deg, #5892f0, #4a7aca);
+  background: #75aaff;
   box-shadow: 20px 20px 60px #416bb1, -20px -20px 60px #63a5ff;
 }
 body section .searchBox .searchinput {
@@ -36,4 +36,17 @@ body section .searchBox .searchinput::-moz-placeholder {
 }
 body section .searchBox .searchinput::placeholder {
   color: #ffffff;
+}
+
+.imageSection {
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background: rgba(238, 233, 233, 0.4392156863);
+  margin: 20px auto;
+  border-radius: 10px;
 }/*# sourceMappingURL=App.css.map */
